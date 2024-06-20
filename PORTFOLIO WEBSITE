@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>My Portfolio</title>
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: ;
+    padding: ;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: ;
+}
+
+nav ul li {
+    display: inline;
+    margin:  10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+.project {
+    border: 1px solid #ddd;
+    margin: 10px ;
+    padding: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin:  auto;
+}
+
+form label {
+    display: block;
+    margin: 10px  5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px  20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #555;
+}
+  </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Introduce yourself here. Mention your skills, background, and experience.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project Title</h3>
+            <p>Project description goes here. Highlight key features and technologies used.</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Portfolio</p>
+    </footer>
+
+    <script>
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Message sent! Thank you.');
+    // You can also implement AJAX here to send the form data to a server
+});
+  </script>
+</body>
+</html>
